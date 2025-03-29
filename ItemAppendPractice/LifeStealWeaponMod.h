@@ -1,33 +1,31 @@
 #ifndef WEAPONMOD_LIFESTEAL_H
 #define WEAPONMOD_LIFESTEAL_H
 
-
 #include "IMod.h"
 
 class LifeStealWeaponMod : public IMod
 {
 public:
-
-    float LifeStealIncrease = 0.1f; //10% increase
-
-    static LifeStealWeaponMod* GetInStance()
+    static LifeStealWeaponMod* GetInstance()
     {
         static LifeStealWeaponMod instance;
         return &instance;
     }
+
 
     std::string GetName() const override
     {
         return "Life Steal Mod Name";
     }
 
-    void Apply(BaseItem& item) const override
+    void Apply(ItemStatsDefinition& itemStats) const override
     {
-        float currentLifesteal = item.GetLifeSteal();
-        item.SetLifeSteal(currentLifesteal += LifeStealIncrease);
+        itemStats.LifeSteal += LifeStealIncrease;
     }
 
 private:
+    float LifeStealIncrease = 0.25f;
+
     LifeStealWeaponMod() = default;
     LifeStealWeaponMod(const LifeStealWeaponMod&) = delete;
     LifeStealWeaponMod& operator=(const LifeStealWeaponMod&) = delete;

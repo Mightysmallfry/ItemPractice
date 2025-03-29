@@ -127,14 +127,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BaseItem.cpp" />
+    <ClCompile Include="EntityManager.cpp" />
     <ClCompile Include="ItemPracticeMain.cpp" />
-    <ClCompile Include="LifeStealWeaponMod.h" />
+    <ClCompile Include="ModSystem.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BaseItem.h" />
     <ClInclude Include="CritChanceWeaponMod.h" />
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="EntityManager.h" />
     <ClInclude Include="IMod.h" />
+    <ClInclude Include="LifeStealWeaponMod.h" />
+    <ClInclude Include="ModSystem.h" />
+    <ClInclude Include="WeaponModDefinition.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ItemStatsDefinition.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

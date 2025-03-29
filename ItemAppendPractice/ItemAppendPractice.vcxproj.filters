@@ -21,22 +21,39 @@
     <ClCompile Include="ItemPracticeMain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="BaseItem.cpp">
+    <ClCompile Include="EntityManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="LifeStealWeaponMod.h">
-      <Filter>Header Files\WeaponMods</Filter>
+    <ClCompile Include="ModSystem.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BaseItem.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="IMod.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CritChanceWeaponMod.h">
       <Filter>Header Files\WeaponMods</Filter>
     </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WeaponModDefinition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ModSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LifeStealWeaponMod.h">
+      <Filter>Header Files\WeaponMods</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ItemStatsDefinition.h">
+      <Filter>Header Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

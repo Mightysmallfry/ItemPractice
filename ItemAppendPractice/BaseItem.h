@@ -21,7 +21,7 @@ enum class WeaponType {
     Hammer
 };
 
-struct ItemStats {
+struct BaseItemStats {
     std::string Name = "Centurion";
     int Damage = 0;
     float CriticalChance = 0.0f;  // Chance for critical hit
@@ -33,7 +33,7 @@ struct ItemStats {
 class BaseItem {
 protected:
 
-    ItemStats Stats;
+    BaseItemStats Stats;
     WeaponType WeaponTypeValue = WeaponType::None;
     std::unordered_map<std::string, int> MinorEffects;
     std::vector<IMod*> Mods;

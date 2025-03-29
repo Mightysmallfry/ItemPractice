@@ -1,18 +1,17 @@
-
 #ifndef IMOD_H
 #define IMOD_H
 
-#include "BaseItem.h"
 #include <string>
 
-class BaseItem;
+#include "ItemStatsDefinition.h"
+
 
 class IMod
 {
 public:
     virtual ~IMod() = default;
-    virtual void Apply(BaseItem& item) const = 0;
     virtual std::string GetName() const = 0;
+    virtual void Apply(ItemStatsDefinition& itemStats) const = 0;
 };
 
 #endif

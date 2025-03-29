@@ -7,9 +7,6 @@
 class CritChanceWeaponMod : public IMod
 {
 public:
-
-    float CriticalChanceIncrease = 0.1f;
-
     static CritChanceWeaponMod* GetInstance()
     {
         static CritChanceWeaponMod instance;
@@ -21,13 +18,14 @@ public:
         return "Crit Chance Mod Name";
     }
 
-    void Apply(BaseItem& item) const override
-    {
-        float currentCritChance = item.GetCriticalChance(); //Increase critical chance by 10%
-        item.SetCriticalChance(currentCritChance += CriticalChanceIncrease);
+    void Apply(ItemStatsDefinition& itemStats) const override
+    {   
+        itemStats.CriticalChance += CriticalChanceIncrease;
     }
 
 private:
+    const float CriticalChanceIncrease = 0.1f;
+
     CritChanceWeaponMod() = default;
     CritChanceWeaponMod(const CritChanceWeaponMod&) = delete;
     CritChanceWeaponMod& operator=(const CritChanceWeaponMod&) = delete;
