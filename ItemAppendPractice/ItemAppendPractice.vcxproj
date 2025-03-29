@@ -128,7 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BaseItem.cpp" />
-    <ClCompile Include="ItemAppendPractice.cpp" />
+    <ClCompile Include="ItemPracticeMain.cpp" />
     <ClCompile Include="LifeStealWeaponMod.h" />
   </ItemGroup>
   <ItemGroup>
