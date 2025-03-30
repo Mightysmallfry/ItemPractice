@@ -138,6 +138,7 @@
     <ClInclude Include="IMod.h" />
     <ClInclude Include="LifeStealWeaponMod.h" />
     <ClInclude Include="ModSystem.h" />
+    <ClInclude Include="StatusChanceWeaponMod.h" />
     <ClInclude Include="WeaponModDefinition.h" />
   </ItemGroup>
   <ItemGroup>

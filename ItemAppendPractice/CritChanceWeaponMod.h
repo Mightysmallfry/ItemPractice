@@ -19,7 +19,7 @@ public:
     }
 
     void Apply(ItemStatsDefinition& itemStats) const override
-    {   
+    {
         itemStats.CriticalChance += CriticalChanceIncrease;
     }
 

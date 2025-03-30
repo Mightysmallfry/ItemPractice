@@ -50,6 +50,9 @@
     <ClInclude Include="LifeStealWeaponMod.h">
       <Filter>Header Files\WeaponMods</Filter>
     </ClInclude>
+    <ClInclude Include="StatusChanceWeaponMod.h">
+      <Filter>Header Files\WeaponMods</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="ItemStatsDefinition.h">

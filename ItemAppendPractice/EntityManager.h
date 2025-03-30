@@ -9,6 +9,7 @@
 #include "WeaponModDefinition.h"
 
 
+//Pairs stats, mods and entities together
 class EntityManager
 {
 public:
